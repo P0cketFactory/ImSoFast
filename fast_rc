@@ -1,0 +1,23 @@
+# 快速查找
+f (){
+    grep -r "$1" ./
+}
+
+ff() {
+    find . -name "$1"
+}
+
+# 历史查找
+hisg (){
+    history |grep $1
+}
+
+# 进程
+psg() {
+    ps aux |grep $1
+}
+
+# kill进程
+k(){
+    killall $1
+}
