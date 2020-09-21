@@ -21,3 +21,8 @@ psg() {
 k(){
     killall $1
 }
+
+# 获取timestamp
+t (){
+    python -c "import time;print(int(time.time()))"
+}
